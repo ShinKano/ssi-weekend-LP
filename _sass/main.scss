@@ -31,3 +31,33 @@ $primary-invert: $pink-invert;
 
 // original stylings from here
 
+img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+figure {
+    width: -webkit-fill-available;
+}
+
+.column.same-height {
+    display: inline-flex; 
+}
+@media screen and (max-width:768px) {
+    .column.same-height {
+        display: block; 
+    }
+}
+
+.column.same-height > div {
+    width: 100%; // only Edge needed this nonsense
+}
+
+.padding {
+    padding: 2rem;
+}
+
+.bg-lightblue {
+    background-color: #e2e9ff;
+}
