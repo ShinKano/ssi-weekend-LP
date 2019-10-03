@@ -6994,6 +6994,11 @@ figure {
 .column.same-height > div {
   width: 100%; }
 
+@media screen and (max-width: 768px) {
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse; } }
+
 .padding {
   padding: 2rem; }
 

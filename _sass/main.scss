@@ -49,10 +49,17 @@ figure {
         display: block; 
     }
 }
-
 .column.same-height > div {
     width: 100%; // only Edge needed this nonsense
 }
+
+@media screen and (max-width:768px) {
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
 
 .padding {
     padding: 2rem;
