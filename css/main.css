@@ -7076,7 +7076,7 @@ li span {
 .bg-info-blue {
   background-color: #3273DC;
   color: white;
-  min-width: min-content; }
+  min-width: 30px; }
 
 .bg-darkgray {
   background-color: #4d4d4d;
