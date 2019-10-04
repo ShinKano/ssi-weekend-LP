@@ -49,6 +49,14 @@ figure {
 .flex {
     display: flex;
 }
+.flow-column {
+    flex-flow: column;
+}
+@media screen and (max-width:768px) {
+    .flow-column {
+        flex-flow: row; 
+    }
+}
 
 .divider {
     width: 100%;
@@ -125,6 +133,7 @@ figure {
     position: relative;
     top: 41%;
 }
+
 
 .plans .columns {
     margin: 0px;

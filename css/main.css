@@ -6987,6 +6987,13 @@ figure {
 .flex {
   display: flex; }
 
+.flow-column {
+  flex-flow: column; }
+
+@media screen and (max-width: 768px) {
+  .flow-column {
+    flex-flow: row; } }
+
 .divider {
   width: 100%;
   border-bottom: 2px solid gray; }
