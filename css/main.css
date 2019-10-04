@@ -6984,6 +6984,13 @@ img {
 figure {
   width: -webkit-fill-available; }
 
+.flex {
+  display: flex; }
+
+.divider {
+  width: 100%;
+  border-bottom: 2px solid gray; }
+
 .column.same-height {
   display: inline-flex; }
 
@@ -6999,11 +7006,18 @@ figure {
     display: flex;
     flex-direction: column-reverse; } }
 
+.margin-for-col {
+  width: 0.5rem; }
+
 .padding {
   padding: 2rem; }
 
 .bg-lightblue {
   background-color: #e2e9ff; }
+
+.bg-info-blue {
+  background-color: #3273DC;
+  color: white; }
 
 .li-bg-lightblue {
   background-color: #e2e9ff;
@@ -7016,3 +7030,22 @@ figure {
   padding: 0.5rem 1rem; }
   .li-bg-white svg {
     color: #454545; }
+
+@media screen and (min-width: 768px) {
+  .li-bg-lightblue {
+    margin: 0 12%; }
+  .li-bg-white {
+    margin: 0 12%; } }
+
+.virtical-letter {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.1rem;
+  padding: 0 0.3rem;
+  position: relative;
+  top: 41%; }
+
+.plans .columns {
+  margin: 0px;
+  width: -webkit-fill-available; }
