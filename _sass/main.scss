@@ -29,12 +29,15 @@ $primary-invert: $pink-invert;
 @import "../node_modules/bulma/bulma";
 
 
+
 // original stylings from here
 
 $lightblue: #e2e9ff;
 $info-blue: #3273DC;
 
-
+h5.smaller {
+    font-size: 0.9rem;
+}
 
 img {
     height: 100%;
@@ -63,6 +66,20 @@ figure {
     border-bottom: 2px solid gray;
 }
 
+.square {
+    width: 100%;
+    max-width: 100%;
+}
+@media screen and (max-width:768px) {
+    .square {
+        text-align: center;
+    }
+}
+
+.small-text {
+    font-size: 0.65rem;
+}
+
 
 .column.same-height {
     display: inline-flex; 
@@ -89,6 +106,11 @@ figure {
 
 .padding {
     padding: 2rem;
+}
+@media screen and (max-width:768px) {
+    .padding {
+        padding: 1.25rem;
+    }
 }
 
 .bg-lightblue {

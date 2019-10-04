@@ -6976,6 +6976,9 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+h5.smaller {
+  font-size: 0.9rem; }
+
 img {
   height: 100%;
   object-fit: cover;
@@ -6998,6 +7001,17 @@ figure {
   width: 100%;
   border-bottom: 2px solid gray; }
 
+.square {
+  width: 100%;
+  max-width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .square {
+    text-align: center; } }
+
+.small-text {
+  font-size: 0.65rem; }
+
 .column.same-height {
   display: inline-flex; }
 
@@ -7018,6 +7032,10 @@ figure {
 
 .padding {
   padding: 2rem; }
+
+@media screen and (max-width: 768px) {
+  .padding {
+    padding: 1.25rem; } }
 
 .bg-lightblue {
   background-color: #e2e9ff; }
