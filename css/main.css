@@ -6991,6 +6991,10 @@ figure {
   .mobile-br {
     display: none; } }
 
+@media screen and (max-width: 768px) {
+  .pc-br {
+    display: none; } }
+
 .flex {
   display: flex; }
 
@@ -7059,6 +7063,12 @@ figure {
 .color-yellow {
   color: #ffff53 !important; }
 
+.color-info-blue {
+  color: #3273DC; }
+
+li span {
+  color: #363636; }
+
 .bg-lightblue {
   background-color: #e2e9ff; }
 
@@ -7087,6 +7097,9 @@ figure {
     margin: 0 12%; }
   .li-bg-white {
     margin: 0 12%; } }
+
+.list-style-dot li {
+  list-style: disc; }
 
 .underline-yellow {
   border-bottom: 3px solid #ffff53;

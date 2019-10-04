@@ -55,6 +55,12 @@ figure {
         display: none;
     }
 }
+@media screen and (max-width:768px) {
+    .pc-br {
+        display: none;
+    }
+}
+
 
 .flex {
     display: flex;
@@ -142,6 +148,14 @@ figure {
     color: #ffff53 !important;
 }
 
+.color-info-blue {
+    color: $info-blue;
+}
+
+li span {
+    color: $dark;
+}
+
 .bg-lightblue {
     background-color: $lightblue;
 }
@@ -178,6 +192,12 @@ figure {
         margin: 0 12%;
     }
 }
+
+.list-style-dot li {
+    list-style: disc;
+}
+
+
 
 
 .underline-yellow {
