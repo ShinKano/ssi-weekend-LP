@@ -7022,6 +7022,9 @@ figure {
 .text-align-right {
   text-align: right; }
 
+.text-align-left {
+  text-align: left; }
+
 .column.same-height {
   display: inline-flex; }
 
@@ -7040,6 +7043,9 @@ figure {
 .margin-for-col {
   width: 0.5rem; }
 
+.margin-centered {
+  margin: 0 auto; }
+
 .padding {
   padding: 2rem; }
 
@@ -7047,11 +7053,21 @@ figure {
   .padding {
     padding: 1.25rem; } }
 
+.color-white {
+  color: white !important; }
+
+.color-yellow {
+  color: #ffff53 !important; }
+
 .bg-lightblue {
   background-color: #e2e9ff; }
 
 .bg-info-blue {
   background-color: #3273DC;
+  color: white; }
+
+.bg-darkgray {
+  background-color: #4d4d4d;
   color: white; }
 
 .li-bg-lightblue {
@@ -7071,6 +7087,11 @@ figure {
     margin: 0 12%; }
   .li-bg-white {
     margin: 0 12%; } }
+
+.underline-yellow {
+  border-bottom: 3px solid #ffff53;
+  width: fit-content;
+  margin: 0 auto; }
 
 .virtical-letter {
   -webkit-writing-mode: vertical-rl;
