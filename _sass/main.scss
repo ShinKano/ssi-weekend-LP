@@ -31,6 +31,11 @@ $primary-invert: $pink-invert;
 
 // original stylings from here
 
+$lightblue: #e2e9ff;
+$info-blue: #3273DC;
+
+
+
 img {
     height: 100%;
     object-fit: cover;
@@ -60,11 +65,28 @@ figure {
     }
 }
 
-
 .padding {
     padding: 2rem;
 }
 
 .bg-lightblue {
-    background-color: #e2e9ff;
+    background-color: $lightblue;
+}
+
+.li-bg-lightblue {
+    background-color: $lightblue;
+    padding: 0.5rem 1rem;
+
+    svg {
+        color: $info-blue;
+    }
+}
+
+.li-bg-white {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    
+    svg {
+        color: #454545;
+    }
 }

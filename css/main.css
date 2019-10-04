@@ -7004,3 +7004,15 @@ figure {
 
 .bg-lightblue {
   background-color: #e2e9ff; }
+
+.li-bg-lightblue {
+  background-color: #e2e9ff;
+  padding: 0.5rem 1rem; }
+  .li-bg-lightblue svg {
+    color: #3273DC; }
+
+.li-bg-white {
+  background-color: white;
+  padding: 0.5rem 1rem; }
+  .li-bg-white svg {
+    color: #454545; }
