@@ -162,7 +162,9 @@ li span {
 .bg-info-blue {
     background-color: $info-blue;
     color: white;
+    min-width: min-content;
 }
+
 .bg-darkgray {
     background-color: #4d4d4d;
     color: white;
@@ -221,4 +223,19 @@ li span {
 .plans .columns {
     margin: 0px;
     width: -webkit-fill-available;
+}
+
+.movie-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+    height: 0;
+    overflow: hidden;
+}
+
+.movie-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
