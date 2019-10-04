@@ -49,6 +49,13 @@ figure {
     width: -webkit-fill-available;
 }
 
+
+@media screen and (min-width:768px) {
+    .mobile-br {
+        display: none;
+    }
+}
+
 .flex {
     display: flex;
 }
@@ -78,6 +85,13 @@ figure {
 
 .small-text {
     font-size: 0.65rem;
+}
+.mid-text {
+    font-size: 1rem;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 
