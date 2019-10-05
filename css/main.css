@@ -6981,7 +6981,15 @@ label.panel-block {
   background-image: url("../img/480_320_0017_480_320_001.jpg");
   background-size: cover;
   object-fit: cover;
-  background-position-x: center; }
+  background-position-x: center;
+  background-position-y: bottom; }
+
+#intro {
+  background-image: url("../img/480_320_0012_480_320_006.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-position-x: center;
+  background-position-y: bottom; }
 
 h5.smaller {
   font-size: 0.9rem; }
