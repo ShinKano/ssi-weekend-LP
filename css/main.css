@@ -6977,6 +6977,12 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+#hero {
+  background-image: url("../img/480_320_0017_480_320_001.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-position-x: center; }
+
 h5.smaller {
   font-size: 0.9rem; }
 
@@ -7190,6 +7196,9 @@ h4.ribbon {
   border-radius: 50%;
   z-index: 999;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); }
+  #page_top:hover {
+    background-color: #ebebeb;
+    scale: 1.1; }
 
 #page_top a {
   position: relative;
