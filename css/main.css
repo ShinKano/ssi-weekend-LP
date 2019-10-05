@@ -7212,3 +7212,7 @@ h4.ribbon {
   left: 0;
   margin: auto;
   text-align: center; }
+
+@media screen and (max-width: 768px) {
+  #page_top {
+    display: none; } }

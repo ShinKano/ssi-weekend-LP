@@ -319,14 +319,14 @@ h4.ribbon {
         0px 2px 2px 0px rgba(0,0,0,0.14),
         0px 3px 1px -2px rgba(0,0,0,0.12);
 }
-  #page_top a{
+#page_top a{
     position: relative;
     display: block;
     width: 50px;
     height: 50px;
     text-decoration: none;
-  }
-  #page_top a > svg{
+}
+#page_top a > svg{
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: 25px;
@@ -340,4 +340,9 @@ h4.ribbon {
     left: 0;
     margin: auto;
     text-align: center;
-  }
+}
+@media screen and (max-width:768px) {
+    #page_top {
+        display: none;
+    }
+}
