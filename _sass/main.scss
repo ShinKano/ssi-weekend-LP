@@ -20,6 +20,8 @@ $pink-invert: #fff;
 $family-sans-serif: "Helvetica", "Arial", sans-serif;
 */
 $blue: #104ba5;
+$cyan: #7093ff;
+$grey-darker :#4d4d4d;
 /*
 // 3. Set the derived variables
 // Use the new pink as the primary color
@@ -40,9 +42,20 @@ $primary-invert: $pink-invert;
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    color: #4d4d4d
 }
 
-// font-size
+li {
+    font-size: 15px;
+}
+
+p {
+    font-size: 13.5px;
+}
+
+
+
+// font
 
 @mixin button-responsive {
     @media screen and (max-width:768px) {
@@ -50,6 +63,21 @@ body {
             padding: 1.5rem 3rem;
         }
     }
+}
+
+
+h2.subtitle.has-text-centered {
+    color: #4d4d4d!important;
+    font-weight: 600!important;
+}
+
+li {
+    font-size: 15px;
+}
+
+ul.caution li {
+    font-size: 12px;
+    color: $cyan;
 }
 
 
@@ -136,13 +164,163 @@ body {
         padding: 1.5rem 6rem;
         
     }
-    // @media screen and (max-width:768px) {
-    //     .button {
-    //         padding: 1.5rem 3rem;
-    //     }
-    // }
     @include button-responsive();
 }
+
+#plans {
+    .virtical-letter {
+        p {
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+    h4 {
+        font-size: 15px;
+        color: $blue;
+    }
+    p.caution {
+        font-size: 12px;
+        color: $cyan;
+    }
+}
+
+#activity {
+    h5 {
+        font-size: 15px;
+        color: $blue;
+    }
+}
+
+#gonzares {
+    h3 {
+        color: $blue;
+        font-size: 18px;
+    }
+    .button {
+        font-size: 15px;
+        padding: 1.5rem 6rem;
+        
+    }
+    @include button-responsive();
+}
+
+#kiwotukeyou {
+    h1 {
+        font-size: 30px;
+    }
+    p.bold {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    h2.color-yellow {
+        font-size: 24px;
+    }
+}
+
+#method {
+    div.bg-info-blue {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 0.4rem;
+    }
+    li {
+        font-size: 15px;
+        padding: 0px 0px 10px 5px;
+        font-weight: 600;
+    }
+    .text-blue {
+        color: $blue;
+    }
+}
+
+#storyshare {
+    div.fomula {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    @media screen and (max-width:1000px) and (min-width: 768px){
+        div.fomula {
+            font-size: 12px;
+        }
+    }
+    h2 {
+        font-size: 24px;
+    }
+}
+
+.ss-features {
+    h2 {
+        font-size: 24px;
+    }
+    h3, .text-blue {
+        font-size: 15px;
+        font-weight: 600;
+        color: $blue;
+    }
+    li {
+        font-size: 13.5px;
+    }
+    .button {
+        font-size: 15px;
+        padding: 1.5rem 6rem;
+        
+    }
+    @include button-responsive();
+}
+
+#application {
+    h4 {
+        font-size: 15px;
+        font-weight: 600;
+        color: $blue;
+    }
+    div.column {
+        font-size: 13.5px;
+    }
+    .caution {
+        font-size: 12px;
+        color: $cyan;
+    }
+    li {
+        font-weight: 600;
+    }
+    .button {
+        font-size: 15px;
+        padding: 1.5rem 6rem;
+        
+    }
+    @include button-responsive();
+}
+
+#footer {
+    .button {
+        font-size: 15px;
+        padding: 1.5rem 6rem;
+        
+    }
+    @include button-responsive();
+
+    .text-green {
+        font-size: 16.5px;
+        font-weight: 600;
+        color: #00B900;
+    }
+    .text-lightblue {
+        color: #15ADF0;
+        font-weight: 600;
+        font-size: 16.5px;
+    }
+    a {
+        color: #7093FF;
+    }
+}
+
+.copy-right {
+    font-size: 12px;
+    padding-bottom: 2rem;
+}
+
+
 
 
 
@@ -166,7 +344,7 @@ body {
 
 
 $lightblue: #e2e9ff;
-$info-blue: #3273DC;
+$info-blue: $blue;
 
 h5.smaller {
     font-size: 0.9rem;
@@ -209,12 +387,13 @@ figure {
 
 .divider {
     width: 100%;
-    border-bottom: 2px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .square {
     width: 100%;
     max-width: 100%;
+    position: relative;
 }
 @media screen and (max-width:768px) {
     .square {
@@ -378,7 +557,7 @@ li span {
 }
 
 .underline-blue {
-    border-bottom: 3px solid #104ba5;
+    border-bottom: 3px solid $cyan;
     margin: 0 auto!important;
     width: fit-content;
 }
