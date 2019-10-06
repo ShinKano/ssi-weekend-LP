@@ -12,12 +12,15 @@
 // 2. Set your own initial variables
 // Update the blue shade, used for links
 $blue: #06bcef;
+
 // Add pink and its invert
 $pink: #ff8080;
 $pink-invert: #fff;
 // Update the sans-serif font family
 $family-sans-serif: "Helvetica", "Arial", sans-serif;
-
+*/
+$blue: #104ba5;
+/*
 // 3. Set the derived variables
 // Use the new pink as the primary color
 $primary: $pink;
@@ -28,10 +31,9 @@ $primary-invert: $pink-invert;
 
 @import "../node_modules/bulma/bulma";
 
-// update variables
 
-$family-sans-serif: YuGothic, 'Yu Gothic Medium';
-$family-primary: YuGothic, 'Yu Gothic Medium';
+
+
 
 
 // original stylings from here
@@ -39,6 +41,112 @@ $family-primary: YuGothic, 'Yu Gothic Medium';
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 }
+
+// font-size
+
+@mixin button-responsive {
+    @media screen and (max-width:768px) {
+        .button {
+            padding: 1.5rem 3rem;
+        }
+    }
+}
+
+
+.navbar-menu {
+    font-size: 13.5px;
+    .button {
+        font-size: 13.5px;
+    }
+}
+#hero {
+    h2.subtitle {
+        font-size: 22.5px!important;
+    }
+    h1.title {
+        font-size: 36px;
+        font-weight: 300;
+    }
+    p {
+        font-size: 16.5px;
+    }
+    .button {
+        font-size: 15px;
+        padding: 1.5rem 3rem;
+    }
+}
+
+#testimanial {
+    .title {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .subtitle {
+        font-size: 18px;
+        font-weight: 600;
+        color: $blue;
+    }
+}
+
+.container {
+    h2.subtitle {
+        font-size: 22.5px;
+        color: $blue;
+        font-weight: 200;
+    }
+    h1.title {
+        font-size: 30px;
+    }
+}
+
+#features {
+    h2.title {
+        font-size: 24px;
+        line-height: 2.4rem;
+    }
+    p {
+        font-size: 13.5px;
+    }
+    .button {
+        font-size: 15px;
+        padding: 1.5rem 6rem;
+    }
+    @include button-responsive();
+}
+
+
+#cebu-study-abroad {
+    p {
+        font-size: 13.5px;
+    }
+}
+
+#intro {
+    h2.subtitle {
+        font-size: 18px;
+        font-weight: 600;
+        color: #4d4d4d;
+
+        span.bigger-text {
+            font-size: 30px;
+        }
+    }
+    .button {
+        font-size: 15px;
+        padding: 1.5rem 6rem;
+        
+    }
+    // @media screen and (max-width:768px) {
+    //     .button {
+    //         padding: 1.5rem 3rem;
+    //     }
+    // }
+    @include button-responsive();
+}
+
+
+
+
 
 #hero {
     background-image: url("../img/480_320_0017_480_320_001.jpg");
@@ -344,6 +452,8 @@ h4.ribbon {
 }
 
 h4.ribbon.ribbon-to-div {
+    font-size: 13.5px;
+    font-weight: 600;
     position: absolute;
     left: -16px;
     background: #104ba5;
