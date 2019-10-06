@@ -6977,6 +6977,9 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; }
+
 #hero {
   background-image: url("../img/480_320_0017_480_320_001.jpg");
   background-size: cover;
@@ -7079,6 +7082,10 @@ figure {
 .margin-centered {
   margin: 0 auto; }
 
+@media screen and (max-width: 768px) {
+  .negative-margin-right {
+    margin-right: -5% !important; } }
+
 .padding {
   padding: 2rem; }
 
@@ -7144,7 +7151,8 @@ li span {
 
 .underline-blue {
   border-bottom: 3px solid #104ba5;
-  margin: 0 auto; }
+  margin: 0 auto !important;
+  width: fit-content; }
 
 .virtical-letter {
   -webkit-writing-mode: vertical-rl;
@@ -7158,6 +7166,9 @@ li span {
 .plans .columns {
   margin: 0px;
   width: -webkit-fill-available; }
+
+.logo {
+  object-fit: scale-down; }
 
 @media screen and (max-width: 768px) {
   .mobile-rotate-90 {
@@ -7192,6 +7203,18 @@ h4.ribbon {
     left: 0;
     border: none;
     border-bottom: solid 6px transparent;
+    border-right: solid 16px #104ba5; }
+
+h4.ribbon.ribbon-to-div {
+  position: absolute;
+  left: -16px;
+  background: #104ba5; }
+  h4.ribbon.ribbon-to-div:before {
+    border-right: solid 16px #7093ff; }
+
+h4.ribbon.ribbon-to-div.lighter {
+  background: #7093ff; }
+  h4.ribbon.ribbon-to-div.lighter:before {
     border-right: solid 16px #104ba5; }
 
 #page_top {

@@ -28,9 +28,17 @@ $primary-invert: $pink-invert;
 
 @import "../node_modules/bulma/bulma";
 
+// update variables
+
+$family-sans-serif: YuGothic, 'Yu Gothic Medium';
+$family-primary: YuGothic, 'Yu Gothic Medium';
 
 
 // original stylings from here
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
 
 #hero {
     background-image: url("../img/480_320_0017_480_320_001.jpg");
@@ -168,6 +176,13 @@ figure {
     margin: 0 auto;
 }
 
+
+@media screen and (max-width:768px) {
+    .negative-margin-right {
+        margin-right: -5%!important;
+    }
+}
+
 .padding {
     padding: 2rem;
 }
@@ -256,7 +271,8 @@ li span {
 
 .underline-blue {
     border-bottom: 3px solid #104ba5;
-    margin: 0 auto;
+    margin: 0 auto!important;
+    width: fit-content;
 }
 
 
@@ -277,6 +293,11 @@ li span {
     width: -webkit-fill-available;
 }
 
+.logo {
+    object-fit: scale-down;
+}
+
+
 
 
 @media screen and (max-width:768px) {
@@ -285,6 +306,7 @@ li span {
     }
 }
 
+// Adjust the size of youtube videos.
 .movie-wrap {
     position: relative;
     padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
@@ -300,6 +322,7 @@ li span {
     height: 100%;
 }
 
+// Ribbon title
 h4.ribbon {
     position: relative;
     left: -0.75rem;
@@ -319,6 +342,23 @@ h4.ribbon {
         border-right: solid 16px #104ba5;
     }
 }
+
+h4.ribbon.ribbon-to-div {
+    position: absolute;
+    left: -16px;
+    background: #104ba5;
+    &:before {
+        border-right: solid 16px #7093ff;
+    }
+}
+
+h4.ribbon.ribbon-to-div.lighter {
+    background: #7093ff;
+    &:before {
+        border-right: solid 16px #104ba5;
+    }
+}
+
 
 // back to top button
 
