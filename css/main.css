@@ -7493,7 +7493,7 @@ h4.ribbon {
   background: #7093ff;
   color: white;
   font-size: 0.85rem;
-  width: fit-content; }
+  width: max-content; }
   h4.ribbon:before {
     position: absolute;
     content: '';
@@ -7561,3 +7561,15 @@ h4.ribbon.ribbon-to-div.lighter {
 @media screen and (max-width: 768px) {
   #page_top {
     display: none; } }
+
+.vs-image {
+  padding: 5px;
+  text-align: center; }
+  .vs-image img {
+    width: auto;
+    height: auto;
+    max-width: 5rem; }
+  @media screen and (min-width: 768px) {
+    .vs-image img {
+      position: relative;
+      top: -20px; } }
