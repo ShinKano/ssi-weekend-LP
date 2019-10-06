@@ -7370,6 +7370,9 @@ figure {
 .margin-bottom-5 {
   margin-bottom: 5rem; }
 
+.margin-left-12 {
+  margin-left: 12px; }
+
 .margin-for-col {
   width: 0.5rem; }
 
@@ -7381,7 +7384,8 @@ figure {
     margin-right: -5% !important; } }
 
 .padding {
-  padding: 2rem; }
+  padding: 2rem;
+  position: relative; }
 
 @media screen and (max-width: 768px) {
   .padding {
@@ -7503,6 +7507,7 @@ h4.ribbon.ribbon-to-div {
   font-size: 13.5px;
   font-weight: 600;
   position: absolute;
+  top: 8px;
   left: -16px;
   background: #104ba5; }
   h4.ribbon.ribbon-to-div:before {
@@ -7512,6 +7517,10 @@ h4.ribbon.ribbon-to-div.lighter {
   background: #7093ff; }
   h4.ribbon.ribbon-to-div.lighter:before {
     border-right: solid 16px #104ba5; }
+
+.ss-features .ribbon {
+  top: -1rem;
+  left: 0px; }
 
 #page_top {
   width: 50px;
