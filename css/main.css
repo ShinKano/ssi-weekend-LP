@@ -7137,7 +7137,8 @@ ul.caution li {
 
 #storyshare div.fomula {
   font-size: 15px;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-left: 0px; }
 
 @media screen and (max-width: 1000px) and (min-width: 768px) {
   #storyshare div.fomula {
