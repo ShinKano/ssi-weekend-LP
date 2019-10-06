@@ -7494,7 +7494,7 @@ h4.ribbon {
   color: white;
   font-size: 0.85rem;
   width: max-content;
-  min-width: 100px; }
+  min-width: 70px; }
   h4.ribbon:before {
     position: absolute;
     content: '';
