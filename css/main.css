@@ -7247,6 +7247,10 @@ figure {
   .pc-br {
     display: none; } }
 
+@media screen and (max-width: 768px) {
+  .mobile-is-centered {
+    justify-content: center; } }
+
 .flex {
   display: flex; }
 
