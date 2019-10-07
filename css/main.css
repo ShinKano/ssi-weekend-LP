@@ -7524,6 +7524,9 @@ h4.ribbon.ribbon-to-div.lighter {
   h4.ribbon.ribbon-to-div.lighter:before {
     border-right: solid 16px #104ba5; }
 
+h4.ribbon.non-ribbon:before {
+  border-right: solid 16px #F5F5F5; }
+
 .ss-features .ribbon {
   top: -1rem;
   left: 0px; }
