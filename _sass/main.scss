@@ -39,6 +39,9 @@ $primary-invert: $pink-invert;
 
 
 // original stylings from here
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
