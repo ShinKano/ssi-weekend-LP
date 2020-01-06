@@ -7218,11 +7218,11 @@ ul.caution li {
   padding-bottom: 2rem; }
 
 #hero {
-  background-image: url("../img/480_320_0017_480_320_001.jpg");
+  background-image: url("../img/shutterstock.jpg");
   background-size: cover;
   object-fit: cover;
   background-position-x: center;
-  background-position-y: bottom; }
+  background-position-y: top; }
 
 #intro {
   background-image: url("../img/480_320_0012_480_320_006.jpg");
